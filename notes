@@ -1,0 +1,41 @@
+To put bubble into DOM
+- create <img> element
+- create <td> element
+- put <img> element into <td> element
+- put <td> element into <tr> element
+
+
+BubbleBreaker object
+
+    attributes: - score
+                - timer
+                - board (array of bubbles)
+                - highlighted bubbles
+                - removed DONE
+
+    init:   - fill board with bubbles (randomly coloured)
+            - set score to 0    
+            - start timer DONE
+
+    clear:  - clear board of all remaining bubbles DONE
+
+    applyGravity: check removed array and apply gravity
+
+    addBubble: DONE
+
+    removeBubble: DONE
+
+    fillBoard: randomly fill the board with bubbles and for each bubble add 
+    corresponding reference in highlighted bubbles DONE
+
+    isHighlighted: determine if the given bubble is in the set of highlighted
+    bubbles
+
+    highlight: highlight the bubble and all bubbles of same color within the
+    viscenity of the given bubble if there are 2 or more of them. put in hilighted
+    set.
+
+
+
+    
+            

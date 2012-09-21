@@ -1,0 +1,64 @@
+<!Doctype html>
+
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="bubble_breaker.js"></script>
+	</head>
+    <body onload="main()">
+		
+		<div id="container">
+
+		<!-- header -->
+		<div id="header">
+		<h1>Bubble Breaker</h1>
+		</div>
+
+		<!-- Game's main menu -->
+		<div id="menu">
+			<table>
+				<tr onclick="bubbleBreaker.init()"><td>Start New Game</td></tr>
+				<tr><td>Top Scores</td></tr>
+				<tr><td onclick="howto();">How to play</td></tr>
+   			</table>
+   			</ul>
+		</div>
+
+		<!-- Display time and score -->
+		<div id="dashboard">
+			<table>
+				<tr><td id="time">Time</td></tr>
+				<tr><td id="Score">Score</td><td id="possibleScore"></td></tr>
+   			</table>
+		</div>
+		
+		<!-- Game's screen -->
+ 		<div id="content">
+			<table id="board">
+			</table>
+		</div>
+        
+        <div id="howto">
+            <h3>How to Play</h3>
+          
+            <p>The game's objective is to remove as many bubbles from the 
+            screen as possible while connecting bubbles of the same 
+            kind together to achieve a higher score.
+            </p>
+            <p>To select the group of bubbles you would like to remove, simply
+            click on one of them to highlight the whole group. Click again to
+            remove that group. If you change opinion and want to select another
+            one, just click on one of the bubbles in the group you would like to
+            select instead.
+            </p>
+            <p>The game ends when there are no more bubbles on the screen or when
+            there are no adjoining bubbles of the same color left on the screen.
+            </p>
+        </div>
+
+		<!-- footer -->
+		<div id="footer"><p>Created by Warren Marivel</p>
+		</div>
+		</div>
+	</body>
+</html>
